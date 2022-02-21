@@ -5,7 +5,7 @@ setup(
     version='0.1.0',
     py_modules=['mctl'],
     install_requires=[
-        'click==8.0.3',
+        'click==8.0.4',
         'mailchimp-marketing==3.0.72',
         'pylint'
     ],
