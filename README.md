@@ -4,7 +4,7 @@ Returns the top clicked links over the specified time period.
 
 ## Usage
 
-```shell
+```bash
 Usage: mctl [OPTIONS]
 
   Exports top links from Mailchimp campaigns sent over the specified period to
@@ -28,4 +28,15 @@ Options:
 python3 -m venv .venv
 source .venv/bin/activate
 pip install --editable .
+```
+
+## Run
+
+```bash
+mctl \
+  --api_key $(op read "op://Home/Mailchimp API Key/credential") \
+  --server us7 \
+  --list_id 267911a165 \
+  --since 2024-01-01 \
+  --before 2024-12-23
 ```
